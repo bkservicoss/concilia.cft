@@ -36,7 +36,7 @@ except Exception:  # sem base de fusos: usa o horário do servidor
 NOME_APP = "Concilia.CFT"
 SUBTITULO = "Conciliação bancária assistida"
 PASTA = Path(__file__).resolve().parent
-LOGO = PASTA / "assets" / "logo.svg"
+LOGO = PASTA / "assets" / "concilia-cft-icone.svg"
 ICONE = PASTA / "assets" / "icone.png"
 TIPOS_ACEITOS = ["ofx", "csv", "txt", "xlsx", "xls"]
 POR_PAGINA = 30

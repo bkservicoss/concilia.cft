@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/logo-horizontal.svg" alt="Concilia.CFT" width="420"></p>
+<p align="center"><img src="assets/concilia-cft-logo.svg" alt="Concilia.CFT" width="420"></p>
 
 <p align="center"><b>Conciliação bancária assistida: cruza o extrato do banco com o controle interno e mostra o que bate e o que falta dos dois lados.</b></p>
 
@@ -31,7 +31,7 @@
 
 | Item | Descrição |
 |---|---|
-| Nome | **Concilia.CFT** (antes Concilia.CRT / Consolida.CRT) |
+| Nome | **Concilia.CFT** |
 | Para quem | Setor financeiro do conselho, na conferência mensal entre banco e controle interno |
 | O que entrega | Sugestões de pares com nota de confiança, listas do que está **só no banco** e **só no sistema**, ajustes manuais, justificativas e relatório em Excel com histórico |
 | Arquivo principal | `concilia_cft.py` |
@@ -83,7 +83,7 @@ As dependências estão em `requirements.txt`, e o tema e o limite de upload (50
 
 ## 6. Identidade visual
 
-<p align="center"><img src="assets/logo.svg" alt="Ícone" width="72"></p>
+<p align="center"><img src="assets/concilia-cft-icone.svg" alt="Ícone" width="72"></p>
 
 O ícone mostra duas colunas (banco e controle interno) ligadas por um sinal de conferido.
 
@@ -100,8 +100,8 @@ O ícone mostra duas colunas (banco e controle interno) ligadas por um sinal de 
 | Item | Definição |
 |---|---|
 | Fonte | Inter (com Segoe UI e Arial como alternativas). No app, a fonte sem serifa padrão do Streamlit |
-| Logo horizontal | `assets/logo-horizontal.svg` |
-| Ícone | `assets/logo.svg` (vetor) e `assets/icone.png` (256 px, ícone da aba do navegador) |
+| Logo horizontal | `assets/concilia-cft-logo.svg` |
+| Ícone | `assets/concilia-cft-icone.svg` (vetor) e `assets/icone.png` (256 px, ícone da aba do navegador) |
 | Escrita do nome | **Concilia**, com **.CFT** em verde |
 
 ## 7. Estrutura do repositório
@@ -112,8 +112,8 @@ concilia.cft/
 ├── concilia_cft.py             # aplicativo (leitura, pareamento, interface e relatório)
 ├── requirements.txt            # dependências
 ├── assets/
-│   ├── logo.svg                # ícone
-│   ├── logo-horizontal.svg     # logo com nome
+│   ├── concilia-cft-icone.svg  # ícone
+│   ├── concilia-cft-logo.svg   # logo com nome
 │   └── icone.png               # ícone da aba do navegador
 ├── exemplos/                   # arquivos fictícios para teste
 │   ├── extrato_exemplo.csv

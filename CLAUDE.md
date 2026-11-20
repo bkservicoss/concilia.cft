@@ -15,7 +15,7 @@ Projeto privado da BK Serviços, Produção & Comunicação.
 |---|---|
 | `concilia_cft.py` | App inteiro, dividido em seções numeradas: 1 normalização, 2 leitura, 3 mapeamento de colunas, 4 motor de pareamento, 5 estado e ações (auditoria), 6 relatório Excel, 7 interface |
 | `requirements.txt` | Dependências (streamlit ≥ 1.50, pandas, openpyxl, xlrd, tzdata) |
-| `assets/` | `logo.svg`, `logo-horizontal.svg`, `icone.png` |
+| `assets/` | `concilia-cft-icone.svg`, `concilia-cft-logo.svg`, `icone.png` |
 | `exemplos/` | Arquivos **fictícios** para teste (CSV de banco, OFX, controle em XLSX) |
 | `.streamlit/config.toml` | Tema com as cores da marca e limite de upload de 50 MB |
 | `.devcontainer/devcontainer.json` | Codespaces: instala as dependências e abre o app na porta 8501 |
