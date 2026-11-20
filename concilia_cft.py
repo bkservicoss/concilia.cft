@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Consolida.CFT — conciliação bancária assistida.
+Concilia.CFT — conciliação bancária assistida.
 
 Cruza o extrato bancário (OFX, CSV, XLS ou XLSX) com o controle interno,
 sugere pares com nota de confiança, mostra as divergências dos dois lados
@@ -33,7 +33,7 @@ try:
 except Exception:  # sem base de fusos: usa o horário do servidor
     FUSO = None
 
-NOME_APP = "Consolida.CFT"
+NOME_APP = "Concilia.CFT"
 SUBTITULO = "Conciliação bancária assistida"
 PASTA = Path(__file__).resolve().parent
 LOGO = PASTA / "assets" / "logo.svg"
@@ -795,7 +795,7 @@ def aplicar_estilo():
 def cabecalho():
     logo = svg_base64(LOGO)
     img = f'<img src="data:image/svg+xml;base64,{logo}" alt="{NOME_APP}">' if logo else ""
-    st.markdown(f'<div class="cabecalho">{img}<div><h1>Consolida<span>.CFT</span></h1>'
+    st.markdown(f'<div class="cabecalho">{img}<div><h1>Concilia<span>.CFT</span></h1>'
                 f"<p>{SUBTITULO}</p></div></div>", unsafe_allow_html=True)
 
 
@@ -1066,7 +1066,7 @@ def aba_relatorio():
             st.rerun()
     else:
         st.download_button("⬇️ Baixar relatório (.xlsx)", c["relatorio"], type="primary",
-                           file_name=f"consolida_cft_{agora():%Y%m%d_%H%M}.xlsx",
+                           file_name=f"concilia_cft_{agora():%Y%m%d_%H%M}.xlsx",
                            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
         st.caption("O relatório tem as abas Resumo, Conciliados, Só no banco, Só no sistema, Justificados, "
                    "A revisar, Recusados e Histórico.")
@@ -1141,12 +1141,12 @@ def main():
         tela_conciliacao()
     else:
         tela_importacao()
-    st.markdown('<div class="rodape">Consolida.CFT · BK Serviços, Produção &amp; Comunicação</div>',
+    st.markdown('<div class="rodape">Concilia.CFT · BK Serviços, Produção &amp; Comunicação</div>',
                 unsafe_allow_html=True)
 
 
 # ==========================================================
-# Inicializador: "python consolida_cft.py" abre o Streamlit
+# Inicializador: "python concilia_cft.py" abre o Streamlit
 # ==========================================================
 def _rodando_no_streamlit():
     try:

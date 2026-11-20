@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/logo-horizontal.svg" alt="Consolida.CFT" width="420"></p>
+<p align="center"><img src="assets/logo-horizontal.svg" alt="Concilia.CFT" width="420"></p>
 
 <p align="center"><b>Conciliação bancária assistida: cruza o extrato do banco com o controle interno e mostra o que bate e o que falta dos dois lados.</b></p>
 
@@ -31,10 +31,10 @@
 
 | Item | Descrição |
 |---|---|
-| Nome | **Consolida.CFT** (antes Concilia.CRT / Consolida.CRT) |
+| Nome | **Concilia.CFT** (antes Concilia.CRT / Consolida.CRT) |
 | Para quem | Setor financeiro do conselho, na conferência mensal entre banco e controle interno |
 | O que entrega | Sugestões de pares com nota de confiança, listas do que está **só no banco** e **só no sistema**, ajustes manuais, justificativas e relatório em Excel com histórico |
-| Arquivo principal | `consolida_cft.py` |
+| Arquivo principal | `concilia_cft.py` |
 
 ## 2. Como funciona
 
@@ -64,7 +64,7 @@ A pasta `exemplos/` tem arquivos **fictícios** para testar o app.
 | Caminho | Passo a passo |
 |---|---|
 | **GitHub Codespaces** (para testar) | No repositório: **Code → Codespaces → Create codespace on main**. O ambiente instala tudo e abre o app sozinho na porta 8501 |
-| **Streamlit Community Cloud** (para deixar no ar) | Em **share.streamlit.io → Create app → Deploy a public app from GitHub**: repositório `bkservicoss/consolida.crt`, branch `main`, arquivo `consolida_cft.py` → **Deploy** |
+| **Streamlit Community Cloud** (para deixar no ar) | Em **share.streamlit.io → Create app → Deploy a public app from GitHub**: repositório `bkservicoss/concilia.cft`, branch `main`, arquivo `concilia_cft.py` → **Deploy** |
 
 As dependências estão em `requirements.txt`, e o tema e o limite de upload (50 MB) ficam em `.streamlit/config.toml`.
 
@@ -102,13 +102,14 @@ O ícone mostra duas colunas (banco e controle interno) ligadas por um sinal de 
 | Fonte | Inter (com Segoe UI e Arial como alternativas). No app, a fonte sem serifa padrão do Streamlit |
 | Logo horizontal | `assets/logo-horizontal.svg` |
 | Ícone | `assets/logo.svg` (vetor) e `assets/icone.png` (256 px, ícone da aba do navegador) |
-| Escrita do nome | **Consolida**, com **.CFT** em verde |
+| Escrita do nome | **Concilia**, com **.CFT** em verde |
 
 ## 7. Estrutura do repositório
 
 ```
-consolida.crt/
-├── consolida_cft.py            # aplicativo (leitura, pareamento, interface e relatório)
+concilia.cft/
+├── CLAUDE.md                   # instruções do projeto para o Claude
+├── concilia_cft.py             # aplicativo (leitura, pareamento, interface e relatório)
 ├── requirements.txt            # dependências
 ├── assets/
 │   ├── logo.svg                # ícone
@@ -134,7 +135,6 @@ consolida.crt/
 
 ## 9. Pendências
 
-- [ ] Definir se o repositório será renomeado para `consolida.cft`
 - [ ] Tornar o repositório privado antes do uso com dados reais
 - [ ] Publicar no Streamlit Community Cloud
 - [ ] Testar com extratos reais do banco usado pelo conselho
